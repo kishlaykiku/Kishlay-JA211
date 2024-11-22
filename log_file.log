@@ -1,0 +1,160 @@
+2024-11-22 11:50:02.343 [INFO] com.hexaware.cricbrik.CricbrikApplication [main] Starting CricbrikApplication using Java 17.0.12 with PID 7964 (C:\Users\kishl\Desktop\Hexaware Training\Even More Training\Coding Challenge\cricbrik\target\classes started by kishl in C:\Users\kishl\Desktop\Hexaware Training\Even More Training\Coding Challenge\cricbrik)
+2024-11-22 11:50:02.362 [INFO] com.hexaware.cricbrik.CricbrikApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-11-22 11:50:05.903 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22 11:50:06.160 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 205 ms. Found 1 JPA repository interface.
+2024-11-22 11:50:07.725 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-11-22 11:50:07.771 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-11-22 11:50:07.772 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-22 11:50:07.952 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-11-22 11:50:07.953 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4991 ms
+2024-11-22 11:50:08.357 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22 11:50:08.502 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-22 11:50:08.654 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-11-22 11:50:10.133 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22 11:50:10.331 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-22 11:50:11.309 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f06ebe0
+2024-11-22 11:50:11.314 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-22 11:50:11.548 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-22 11:50:11.623 [INFO] org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-22 11:50:13.845 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22 11:50:14.178 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22 11:50:15.626 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22 11:50:16.891 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-11-22 11:50:16.918 [INFO] com.hexaware.cricbrik.CricbrikApplication [main] Started CricbrikApplication in 16.54 seconds (process running for 17.587)
+2024-11-22 11:54:02.104 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-22 11:54:02.106 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-11-22 11:54:02.110 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2024-11-22 12:02:38.032 [INFO] com.hexaware.cricbrik.CricbrikApplication [main] Starting CricbrikApplication using Java 17.0.12 with PID 10896 (C:\Users\kishl\Desktop\Hexaware Training\Even More Training\Coding Challenge\cricbrik\target\classes started by kishl in C:\Users\kishl\Desktop\Hexaware Training\Even More Training\Coding Challenge\cricbrik)
+2024-11-22 12:02:38.043 [INFO] com.hexaware.cricbrik.CricbrikApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-11-22 12:02:41.309 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22 12:02:41.788 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 214 ms. Found 1 JPA repository interface.
+2024-11-22 12:02:44.444 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-11-22 12:02:44.516 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-11-22 12:02:44.520 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-22 12:02:44.858 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-11-22 12:02:44.860 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6631 ms
+2024-11-22 12:02:45.719 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22 12:02:46.146 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-22 12:02:46.390 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-11-22 12:02:47.989 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22 12:02:48.166 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-22 12:02:49.771 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6451a288
+2024-11-22 12:02:49.784 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-22 12:02:49.978 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-22 12:02:50.077 [INFO] org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-22 12:02:52.709 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22 12:02:52.867 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22 12:02:53.836 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22 12:02:54.911 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-11-22 12:02:54.950 [INFO] com.hexaware.cricbrik.CricbrikApplication [main] Started CricbrikApplication in 19.021 seconds (process running for 20.677)
+2024-11-22 12:04:12.536 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-22 12:04:12.541 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-11-22 12:04:12.599 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 51 ms
+2024-11-22 12:06:54.893 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-22 12:07:01.664 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.hexaware.cricbrik.entity.Player> com.hexaware.cricbrik.controller.PlayerController.updatePlayer(java.util.UUID,com.hexaware.cricbrik.dto.PlayerDTO) with 5 errors: [Field error in object 'playerDTO' on field 'playerName': rejected value [null]; codes [NotNull.playerDTO.playerName,NotNull.playerName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.playerName,playerName]; arguments []; default message [playerName]]; default message [Player name is required.]] [Field error in object 'playerDTO' on field 'jerseyNumber': rejected value [null]; codes [NotNull.playerDTO.jerseyNumber,NotNull.jerseyNumber,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.jerseyNumber,jerseyNumber]; arguments []; default message [jerseyNumber]]; default message [Jersey number is required.]] [Field error in object 'playerDTO' on field 'teamName': rejected value [null]; codes [NotNull.playerDTO.teamName,NotNull.teamName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.teamName,teamName]; arguments []; default message [teamName]]; default message [Team name is required.]] [Field error in object 'playerDTO' on field 'countryOrState': rejected value [null]; codes [NotNull.playerDTO.countryOrState,NotNull.countryOrState,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.countryOrState,countryOrState]; arguments []; default message [countryOrState]]; default message [Country or state name is required.]] [Field error in object 'playerDTO' on field 'role': rejected value [null]; codes [NotNull.playerDTO.role,NotNull.role,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.role,role]; arguments []; default message [role]]; default message [Role is required.]] ]
+2024-11-22 12:08:06.879 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.hexaware.cricbrik.entity.Player> com.hexaware.cricbrik.controller.PlayerController.updatePlayer(java.util.UUID,com.hexaware.cricbrik.dto.PlayerDTO) with 5 errors: [Field error in object 'playerDTO' on field 'playerName': rejected value [null]; codes [NotNull.playerDTO.playerName,NotNull.playerName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.playerName,playerName]; arguments []; default message [playerName]]; default message [Player name is required.]] [Field error in object 'playerDTO' on field 'teamName': rejected value [null]; codes [NotNull.playerDTO.teamName,NotNull.teamName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.teamName,teamName]; arguments []; default message [teamName]]; default message [Team name is required.]] [Field error in object 'playerDTO' on field 'jerseyNumber': rejected value [null]; codes [NotNull.playerDTO.jerseyNumber,NotNull.jerseyNumber,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.jerseyNumber,jerseyNumber]; arguments []; default message [jerseyNumber]]; default message [Jersey number is required.]] [Field error in object 'playerDTO' on field 'countryOrState': rejected value [null]; codes [NotNull.playerDTO.countryOrState,NotNull.countryOrState,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.countryOrState,countryOrState]; arguments []; default message [countryOrState]]; default message [Country or state name is required.]] [Field error in object 'playerDTO' on field 'role': rejected value [null]; codes [NotNull.playerDTO.role,NotNull.role,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [playerDTO.role,role]; arguments []; default message [role]]; default message [Role is required.]] ]
+2024-11-22 12:11:54.363 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-22 12:14:42.117 [INFO] com.hexaware.cricbrik.CricbrikApplication [main] Starting CricbrikApplication using Java 17.0.12 with PID 8820 (C:\Users\kishl\Desktop\Hexaware Training\Even More Training\Coding Challenge\cricbrik\target\classes started by kishl in C:\Users\kishl\Desktop\Hexaware Training\Even More Training\Coding Challenge\cricbrik)
+2024-11-22 12:14:42.130 [INFO] com.hexaware.cricbrik.CricbrikApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-11-22 12:14:46.045 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22 12:14:46.617 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 417 ms. Found 1 JPA repository interface.
+2024-11-22 12:14:48.769 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-11-22 12:14:48.834 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-11-22 12:14:48.838 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-22 12:14:49.124 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-11-22 12:14:49.154 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6815 ms
+2024-11-22 12:14:49.598 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22 12:14:49.766 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-22 12:14:49.871 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-11-22 12:14:50.826 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22 12:14:51.076 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-22 12:14:52.060 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fde1d64
+2024-11-22 12:14:52.072 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-22 12:14:52.228 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-22 12:14:52.295 [INFO] org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-22 12:14:54.334 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22 12:14:54.446 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22 12:14:55.411 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22 12:14:56.276 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-11-22 12:14:56.310 [INFO] com.hexaware.cricbrik.CricbrikApplication [main] Started CricbrikApplication in 15.849 seconds (process running for 17.945)
+2024-11-22 12:15:22.208 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-22 12:15:22.210 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-11-22 12:15:22.214 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-11-22 12:15:22.360 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'playerId': Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; Invalid UUID string: 1121]
+2024-11-22 12:15:38.935 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.hexaware.cricbrik.exception.ResourceNotFoundException: Player not found with ID: 8588fc22-56eb-4cfc-b5f1-41ae2b87c801] with root cause
+com.hexaware.cricbrik.exception.ResourceNotFoundException: Player not found with ID: 8588fc22-56eb-4cfc-b5f1-41ae2b87c801
+	at com.hexaware.cricbrik.service.impl.PlayerServiceImpl.lambda$0(PlayerServiceImpl.java:36)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.hexaware.cricbrik.service.impl.PlayerServiceImpl.getPlayerById(PlayerServiceImpl.java:36)
+	at com.hexaware.cricbrik.controller.PlayerController.getPlayerById(PlayerController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
