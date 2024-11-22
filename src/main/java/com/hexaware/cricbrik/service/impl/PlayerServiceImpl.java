@@ -39,6 +39,8 @@ public class PlayerServiceImpl implements IPlayerService {
     @Override
     public Player addPlayer(PlayerDTO playerDTO) {
 
+        validateRole(playerDTO.getRole());
+
         Player player = new Player();
 
         player.setPlayerName(playerDTO.getPlayerName());
@@ -54,6 +56,8 @@ public class PlayerServiceImpl implements IPlayerService {
 
     @Override
     public Player updatePlayer(UUID playerId, PlayerDTO playerDTO) {
+
+        validateRole(playerDTO.getRole());
 
         Player existingPlayer = playerRepository.findById(playerId)
                 .orElseThrow(() -> new ResourceNotFoundException("Player not found with ID: " + playerId));
@@ -82,5 +86,21 @@ public class PlayerServiceImpl implements IPlayerService {
     public List<Player> getPlayersByTeamName(String teamName) {
 
         return playerRepository.findByTeamName(teamName);
+    }
+
+    @Override
+    public int updateTeamName(String oldTeamName, String newTeamName) {
+
+        return playerRepository.updateTeamNameForPlayers(oldTeamName, newTeamName);
+    }
+
+    private void validateRole(String role) {
+
+        List<String> validRoles = List.of("Batsman", "Bowler", "Keeper", "All Rounder");
+
+        if (validRoles.contains(role) == false) {
+
+            throw new IllegalArgumentException("Invalid role: " + role);
+        }
     }
 }

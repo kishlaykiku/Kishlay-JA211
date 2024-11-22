@@ -30,4 +30,7 @@ public interface IPlayerService {
 
     // Retrieve players by team name
     List<Player> getPlayersByTeamName(String teamName);
+
+    // Update team name for players
+    int updateTeamName(String oldTeamName, String newTeamName);
 }

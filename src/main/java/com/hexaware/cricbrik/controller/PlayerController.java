@@ -63,11 +63,11 @@ public class PlayerController {
 
     // Delete player by ID
     @DeleteMapping("/delete/{playerId}")
-    public ResponseEntity<Void> deletePlayer(@PathVariable UUID playerId) {
+    public ResponseEntity<String> deletePlayer(@PathVariable UUID playerId) {
 
         playerService.deletePlayer(playerId);
 
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok("Record Deleted Successfully");
     }
 
     // Get players by team name
@@ -77,5 +77,14 @@ public class PlayerController {
         List<Player> players = playerService.getPlayersByTeamName(teamName);
 
         return ResponseEntity.ok(players);
+    }
+
+    // Update team name for players
+    @PutMapping("/update-team-name")
+    public ResponseEntity<String> updateTeamName(@RequestParam String oldTeamName, @RequestParam String newTeamName) {
+
+        int updatedCount = playerService.updateTeamName(oldTeamName, newTeamName);
+
+        return ResponseEntity.ok(updatedCount + " players updated successfully.");
     }
 }
