@@ -1,7 +1,7 @@
 package com.hexaware.cricbrik.service;
 
 import java.util.List;
-import java.util.UUID;
+// import java.util.UUID;
 
 import com.hexaware.cricbrik.dto.PlayerDTO;
 import com.hexaware.cricbrik.entity.Player;
@@ -17,16 +17,16 @@ public interface IPlayerService {
     List<Player> getAllPlayers();
 
     // Retrieve players by their ID
-    Player getPlayerById(UUID playerId);
+    Player getPlayerById(Integer playerId);
 
     // Add player
     Player addPlayer(PlayerDTO playerDTO);
 
     // Update player
-    Player updatePlayer(UUID playerId, PlayerDTO playerDTO);
+    Player updatePlayer(Integer playerId, PlayerDTO playerDTO);
 
     // Delete player
-    void deletePlayer(UUID playerId);
+    void deletePlayer(Integer playerId);
 
     // Retrieve players by team name
     List<Player> getPlayersByTeamName(String teamName);

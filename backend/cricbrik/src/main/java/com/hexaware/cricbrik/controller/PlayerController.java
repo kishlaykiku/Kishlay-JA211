@@ -1,7 +1,7 @@
 package com.hexaware.cricbrik.controller;
 
 import java.util.List;
-import java.util.UUID;
+// import java.util.UUID;
 
 import com.hexaware.cricbrik.dto.PlayerDTO;
 import com.hexaware.cricbrik.entity.Player;
@@ -36,7 +36,7 @@ public class PlayerController {
 
     // Get player by ID
     @GetMapping("/get/{playerId}")
-    public ResponseEntity<Player> getPlayerById(@PathVariable UUID playerId) {
+    public ResponseEntity<Player> getPlayerById(@PathVariable Integer playerId) {
 
         Player player = playerService.getPlayerById(playerId);
 
@@ -54,7 +54,7 @@ public class PlayerController {
 
     // Update player details
     @PutMapping("/update/{playerId}")
-    public ResponseEntity<Player> updatePlayer(@PathVariable UUID playerId, @Valid @RequestBody PlayerDTO playerDTO) {
+    public ResponseEntity<Player> updatePlayer(@PathVariable Integer playerId, @Valid @RequestBody PlayerDTO playerDTO) {
 
         Player updatedPlayer = playerService.updatePlayer(playerId, playerDTO);
 
@@ -63,7 +63,7 @@ public class PlayerController {
 
     // Delete player by ID
     @DeleteMapping("/delete/{playerId}")
-    public ResponseEntity<Void> deletePlayer(@PathVariable UUID playerId) {
+    public ResponseEntity<Void> deletePlayer(@PathVariable Integer playerId) {
 
         playerService.deletePlayer(playerId);
 

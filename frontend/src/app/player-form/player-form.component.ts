@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
     templateUrl: './player-form.component.html',
     styleUrl: './player-form.component.css'
 })
-export class PlayerFormComponent {
+export class PlayerFormComponent implements OnInit {
 
     player: Partial<Player> = {};
     isEdit = false;

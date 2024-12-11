@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 
 export interface Player {
-    playerId: string;
+    playerId: number;
     playerName: string;
     jerseyNumber: number;
     role: string;

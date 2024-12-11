@@ -1,7 +1,7 @@
 package com.hexaware.cricbrik.service.impl;
 
 import java.util.List;
-import java.util.UUID;
+// import java.util.UUID;
 
 import com.hexaware.cricbrik.dto.PlayerDTO;
 import com.hexaware.cricbrik.entity.Player;
@@ -30,7 +30,7 @@ public class PlayerServiceImpl implements IPlayerService {
     }
 
     @Override
-    public Player getPlayerById(UUID playerId) {
+    public Player getPlayerById(Integer playerId) {
 
         return playerRepository.findById(playerId)
                 .orElseThrow(() -> new ResourceNotFoundException("Player not found with ID: " + playerId));
@@ -55,7 +55,7 @@ public class PlayerServiceImpl implements IPlayerService {
     }
 
     @Override
-    public Player updatePlayer(UUID playerId, PlayerDTO playerDTO) {
+    public Player updatePlayer(Integer playerId, PlayerDTO playerDTO) {
 
         validateRole(playerDTO.getRole());
 
@@ -74,7 +74,7 @@ public class PlayerServiceImpl implements IPlayerService {
     }
 
     @Override
-    public void deletePlayer(UUID playerId) {
+    public void deletePlayer(Integer playerId) {
 
         Player player = playerRepository.findById(playerId)
                 .orElseThrow(() -> new ResourceNotFoundException("Player not found with ID: " + playerId));

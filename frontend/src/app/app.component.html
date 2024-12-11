@@ -32,7 +32,8 @@
 
             <form class="d-flex ms-auto" (submit)="searchPlayers()">
                 <input
-                    #searchTerm
+                    name="teamName"
+                    [(ngModel)]="teamName"
                     type="search"
                     class="form-control me-2"
                     placeholder="Search by Team Name"
@@ -43,5 +44,5 @@
         </div>
     </div>
 </nav>
-  
+
 <router-outlet></router-outlet>

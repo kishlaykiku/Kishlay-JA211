@@ -1,9 +1,25 @@
 <div class="container mt-4">
 
-    <h2 class="text-light">Player List</h2>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2 class="text-light">Player List</h2>
+
+        <div>
+            <label for="sortBy" class="form-label text-light me-2">Sort By:</label>
+            <select
+                id="sortBy"
+                class="form-select d-inline-block w-auto"
+                (change)="onSortChange($event)">
+                    <option value="playerId">Player ID</option>
+                    <option value="playerName">Player Name</option>
+                    <option value="jerseyNumber">Jersey Number</option>
+                    <option value="role">Role</option>
+            </select>
+        </div>
+    </div>
   
     <div *ngIf="isLoading" class="text-center text-light">
-        <p>Loading...</p>
+        <span class="loader"></span>
     </div>
 
     <div *ngIf="isError" class="alert alert-danger text-center p-2 w-50 mx-auto">
@@ -17,7 +33,7 @@
 
         <thead>
             <tr>
-                <th scope="col">S No.</th>
+                <!-- <th scope="col">S No.</th> -->
                 <th scope="col">Player ID</th>
                 <th scope="col">Player Name</th>
                 <th scope="col">Jersey Number</th>
@@ -28,14 +44,14 @@
 
         <tbody>
             <tr *ngFor="let player of players; let i=index;">
-                <td>{{ i+1 }}</td>
+                <!-- <td>{{ i + 1 }}</td> -->
                 <td>{{ player.playerId }}</td>
                 <td>{{ player.playerName }}</td>
                 <td>{{ player.jerseyNumber }}</td>
                 <td>{{ player.role }}</td>
                 <td>
                     <button class="btn btn-sm btn-primary" [routerLink]="['/players/edit', player.playerId]">Edit</button>
-                    <button class="btn btn-sm btn-danger ms-2" (click)="deletePlayer(player.playerId)">Delete</button>
+                    <button class="btn btn-sm btn-danger ms-2" (click)="deletePlayer(player.playerId.toString())">Delete</button>
                 </td>
             </tr>
         </tbody>

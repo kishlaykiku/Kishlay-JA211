@@ -47,7 +47,7 @@ export class PlayerListComponent implements OnInit {
         this.isFiltered = true;
         this.playerService.getPlayers().subscribe({
             next: (data) => {
-                this.players = this.sortPlayersByName(data);
+                this.players = data;
                 this.isLoading = false;
             },
             error: (err) => {
@@ -66,7 +66,7 @@ export class PlayerListComponent implements OnInit {
         this.isFiltered = false;
         this.playerService.getPlayersByTeamName(teamName).subscribe({
             next: (data) => {
-                this.players = this.sortPlayersByName(data);
+                this.players = data;
                 this.isLoading = false;
             },
             error: (err) => {
@@ -78,12 +78,6 @@ export class PlayerListComponent implements OnInit {
         });
     }
 
-    // Sort players by name
-    sortPlayersByName(players: Player[]): Player[] {
-
-        return players.sort((a, b) => a.playerName.localeCompare(b.playerName));
-    }
-
     // Delete a player by ID and update the list of players
     deletePlayer(playerId: string): void {
 
@@ -92,13 +86,40 @@ export class PlayerListComponent implements OnInit {
             this.playerService.deletePlayer(playerId).subscribe({
                 next: () => {
                     alert('Player deleted successfully!');
-                    this.players = this.players.filter(player => player.playerId !== playerId);
+                    this.players = this.players.filter(player => player.playerId !== Number(playerId));
                 },
                 error: (err) => {
                     console.error('Failed to delete player:', err);
                     alert('Failed to delete the player. Please try again later.');
                 }
             });
+        }
+    }
+
+    // Sort players based on the selected criteria
+    onSortChange(event: Event): void {
+
+        const value = (event.target as HTMLSelectElement).value;
+        this.players = this.sortPlayers(value);
+    }
+    sortPlayers(criteria: string): Player[] {
+
+        switch (criteria) {
+
+            case 'playerId':
+                return this.players.sort((a, b) => a.playerId - b.playerId);
+
+            case 'playerName':
+                return this.players.sort((a, b) => a.playerName.localeCompare(b.playerName));
+
+            case 'jerseyNumber':
+                return this.players.sort((a, b) => a.jerseyNumber - b.jerseyNumber);
+
+            case 'role':
+                return this.players.sort((a, b) => a.role.localeCompare(b.role));
+
+            default:
+                return this.players;
         }
     }
 }

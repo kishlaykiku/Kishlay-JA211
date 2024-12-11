@@ -1,6 +1,6 @@
 package com.hexaware.cricbrik.entity;
 
-import java.util.UUID;
+// import java.util.UUID;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -21,8 +21,9 @@ import lombok.NoArgsConstructor;
 public class Player {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "player_id", nullable = false, unique = true)
-    private UUID playerId;
+    private Integer playerId;
 
     @Column(name = "player_name", nullable = false)
     private String playerName;
@@ -46,12 +47,12 @@ public class Player {
     private String description;
 
     // Assigning a UID before inserting the player into the database
-    @PrePersist
-    public void onCreate() {
+    // @PrePersist
+    // public void onCreate() {
 
-        if(playerId == null) {
+    //     if(playerId == null) {
 
-            playerId = UUID.randomUUID();
-        }
-    }
+    //         playerId = UUID.randomUUID();
+    //     }
+    // }
 }
