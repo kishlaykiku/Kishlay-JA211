@@ -1,0 +1,110 @@
+<div class="container mt-4 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+
+    <div class="card p-4 shadow" style="width: 500px; background-color: #1f1f1f;">
+
+        <h2 class="text-light text-center">Add Player</h2>
+
+        <form #playerForm="ngForm" (ngSubmit)="onSubmit(playerForm)" class="text-light">
+
+            <!-- Player Name -->
+            <div class="mb-3">
+                <label for="playerName" class="form-label">Player Name</label>
+                <input
+                    type="text"
+                    id="playerName"
+                    class="form-control"
+                    name="playerName"
+                    [(ngModel)]="player.playerName"
+                    required />
+                <div *ngIf="playerForm.submitted && playerForm.form.controls['playerName']?.invalid" class="text-danger">Player Name is required.</div>
+            </div>
+
+            <!-- Jersey Number -->
+            <div class="mb-3">
+                <label for="jerseyNumber" class="form-label">Jersey Number</label>
+                <input
+                    type="number"
+                    id="jerseyNumber"
+                    class="form-control"
+                    name="jerseyNumber"
+                    [(ngModel)]="player.jerseyNumber"
+                    required />
+                <div *ngIf="playerForm.submitted && playerForm.form.controls['jerseyNumber']?.invalid" class="text-danger">Jersey Number is required.</div>
+            </div>
+
+            <!-- Role -->
+            <div class="mb-3">
+                <label for="role" class="form-label">Role</label>
+                <select
+                    id="role"
+                    class="form-select"
+                    name="role"
+                    [(ngModel)]="player.role"
+                    required>
+                        <option value="" disabled>Select Role</option>
+                        <option value="Batsman">Batsman</option>
+                        <option value="Bowler">Bowler</option>
+                        <option value="Keeper">Keeper</option>
+                        <option value="All Rounder">All Rounder</option>
+                </select>
+                <div *ngIf="playerForm.submitted && playerForm.form.controls['role']?.invalid" class="text-danger">Role is required.</div>
+            </div>
+
+            <!-- Total Matches -->
+            <div class="mb-3">
+                <label for="totalMatches" class="form-label">Total Matches</label>
+                <input
+                    type="number"
+                    id="totalMatches"
+                    class="form-control"
+                    name="totalMatches"
+                    [(ngModel)]="player.totalMatches"
+                    required />
+                <div *ngIf="playerForm.submitted && playerForm.form.controls['totalMatches']?.invalid" class="text-danger">Total Matches is required.</div>
+            </div>
+
+            <!-- Team Name -->
+            <div class="mb-3">
+                <label for="teamName" class="form-label">Team Name</label>
+                <input
+                    type="text"
+                    id="teamName"
+                    class="form-control"
+                    name="teamName"
+                    [(ngModel)]="player.teamName"
+                    required />
+                <div *ngIf="playerForm.submitted && playerForm.form.controls['teamName']?.invalid" class="text-danger">Team Name is required.</div>
+            </div>
+
+            <!-- Country or State Name -->
+            <div class="mb-3">
+                <label for="countryOrState" class="form-label">Country or State Name</label>
+                <input
+                    type="text"
+                    id="countryOrState"
+                    class="form-control"
+                    name="countryOrState"
+                    [(ngModel)]="player.countryOrState"
+                    required />
+                <div *ngIf="playerForm.submitted && playerForm.form.controls['countryOrState']?.invalid" class="text-danger">Country or State Name is required.</div>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea
+                    id="description"
+                    class="form-control"
+                    name="description"
+                    [(ngModel)]="player.description">
+                </textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Add Player</button>
+            </div>
+
+        </form>
+    </div>
+</div>

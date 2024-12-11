@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" routerLink="/">Cricbrik</a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="'/players'" routerLinkActive="active">Player List</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="'/players/add'" routerLinkActive="active">Add Player</a>
+                </li>
+
+            </ul>
+
+            <form class="d-flex ms-auto" (submit)="searchPlayers()">
+                <input
+                    #searchTerm
+                    type="search"
+                    class="form-control me-2"
+                    placeholder="Search by Team Name"
+                    aria-label="Search"
+                    required />
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+  
+<router-outlet></router-outlet>
