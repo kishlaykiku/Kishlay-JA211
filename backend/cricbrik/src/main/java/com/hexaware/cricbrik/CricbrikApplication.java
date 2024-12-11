@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CricbrikApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(CricbrikApplication.class, args);
 	}
-
 }

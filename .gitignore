@@ -1,4 +1,11 @@
+################# Backend ignore files #################
+
+### Custom ###
+log_file.log
 HELP.md
+**.gz
+
+### Compiled Output ###
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -29,5 +36,42 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+
+################# Frontend ignore files #################
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Miscellaneous
+frontend/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+################# IDE specific ignore files #################
+
 ### VS Code ###
 .vscode/
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace

@@ -63,11 +63,11 @@ public class PlayerController {
 
     // Delete player by ID
     @DeleteMapping("/delete/{playerId}")
-    public ResponseEntity<String> deletePlayer(@PathVariable UUID playerId) {
+    public ResponseEntity<Void> deletePlayer(@PathVariable UUID playerId) {
 
         playerService.deletePlayer(playerId);
 
-        return ResponseEntity.ok("Record Deleted Successfully");
+        return ResponseEntity.noContent().build();
     }
 
     // Get players by team name
