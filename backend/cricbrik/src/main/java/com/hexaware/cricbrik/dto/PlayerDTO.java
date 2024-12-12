@@ -1,7 +1,7 @@
 package com.hexaware.cricbrik.dto;
 
 import lombok.Data;
-import java.util.UUID;
+// import java.util.UUID;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -15,7 +15,7 @@ import jakarta.validation.constraints.Size;
 @Data
 public class PlayerDTO {
     
-    private UUID playerId;
+    private Integer playerId;
 
     @NotNull(message = "Player name is required.")
     @Size(min = 2, max = 100, message = "Player name must be between 2 and 100 characters.")
