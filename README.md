@@ -57,7 +57,7 @@ Cricbrik is a web application built with Spring Boot and Angular that allows use
 #### Frontend
 1. Clone the repository:
    ```console
-   git clone https://github.com/yourusername/cricbrik.git
+   git clone https://github.com/kishlaykiku/Kishlay-JA211.git
    cd cricbrik/frontend
    ```
 2. Install dependencies:
